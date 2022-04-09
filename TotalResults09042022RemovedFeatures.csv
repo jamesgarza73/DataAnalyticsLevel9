@@ -1,0 +1,217 @@
+Data Set,Label,Scaled,Imputer,Split,MSE,MAE,R2,Model,Best Params,Outliers
+Train,Pedestrian Total,NA,Pandas,0.1,0,0,100%,RandomForest,"{'n_estimators': 10, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.5,0,0,100%,RandomForest,"{'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Train,Pedestrian Total,Standard,Pandas,0.5,0,0,100%,RandomForest,"{'n_estimators': 50, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.3,8.59E-07,1.94E-05,100%,RandomForest,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Train,Pedestrian Total,Standard,KNN,0.3,2.58E-06,3.36E-05,100%,RandomForest,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.3,1.12E-05,0.00010627,100%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.3,7.20E-06,3.60E-05,100%,RandomForest,"{'n_estimators': 50, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Train,Pedestrian Total,NA,Pandas,0.1,1.51E-05,0.000195154,100%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.3,5.76E-05,0.000320068,100%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Train,Pedestrian Total,Standard,KNN,0.5,0.000434209,0.000557096,100%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Train,Pedestrian Total,NA,Pandas,0.5,0.001085677,0.000867658,100%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Train,Pedestrian Total,NA,KNN,0.5,506.3957851,13.09622747,100%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.5,725.9921813,15.78986675,100%,RandomForest,"{'n_estimators': 50, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Train,Pedestrian Total,Standard,KNN,0.1,1098.302174,21.18364954,100%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Train,Pedestrian Total,NA,KNN,0.1,1123.592195,21.44978247,100%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Train,Pedestrian Total,NA,Pandas,0.3,2677.584081,33.86881144,100%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.1,2360.976492,32.2810875,100%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.1,2467.683921,32.9179575,100%,RandomForest,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Not Removed
+Train,Pedestrian Total,NA,Pandas,0.3,1511.589442,24.09313493,100%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.1,2695.736231,32.43114491,100%,RandomForest,"{'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Train,Pedestrian Total,NA,Pandas,0.5,169764.6961,258.7707493,100%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': True}",Not Removed
+Train,Pedestrian Total,Standard,Pandas,0.3,153145.572,252.2147357,100%,RandomForest,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': True}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.5,185823.822,269.8800958,100%,RandomForest,"{'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': True}",Not Removed
+Train,Pedestrian Total,Standard,Pandas,0.1,178766.2965,279.4427064,99%,RandomForest,"{'n_estimators': 50, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': True}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.3,782741.882,552.7134039,98%,KNN,"{'p': 1, 'n_neighbors': 5, 'leaf_size': 50}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.1,748995.5332,532.5453797,98%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 20}",Not Removed
+Train,Pedestrian Total,NA,Pandas,0.3,975361.0929,634.4626338,98%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 40}",Not Removed
+Train,Pedestrian Total,NA,Pandas,0.1,919550.0461,623.6522715,97%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 30}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.5,1232993.386,705.4656635,97%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 50}",Not Removed
+Train,Pedestrian Total,NA,Pandas,0.5,1234456.941,706.1118787,97%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.3,1213998.692,716.7182899,97%,KNN,"{'p': 2, 'n_neighbors': 5, 'leaf_size': 20}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.1,1098859.972,689.8704921,97%,KNN,"{'p': 2, 'n_neighbors': 5, 'leaf_size': 20}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.1,589246.3813,508.975765,97%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 50}",Removed
+Train,Pedestrian Total,NA,KNN,0.3,671735.9906,550.783857,97%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Test,Pedestrian Total,NA,KNN,0.1,413300.7183,459.7112511,97%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Test,Pedestrian Total,Standard,KNN,0.1,415354.5818,460.579851,97%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Train,Pedestrian Total,NA,Pandas,0.3,716376.829,577.0975704,97%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 40}",Removed
+Test,Pedestrian Total,Standard,KNN,0.1,436761.3869,482.741681,96%,RandomForest,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Not Removed
+Test,Pedestrian Total,NA,KNN,0.1,437204.4872,483.4646924,96%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Not Removed
+Test,Pedestrian Total,NA,KNN,0.1,459435.266,495.6689981,96%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 50}",Removed
+Train,Pedestrian Total,NA,KNN,0.5,821848.48,622.4370053,96%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Train,Pedestrian Total,NA,Pandas,0.5,870538.019,642.2668389,96%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 20}",Removed
+Test,Pedestrian Total,NA,KNN,0.1,488695.4636,500.8358974,96%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 20}",Not Removed
+Train,Pedestrian Total,Standard,Pandas,0.5,1941286.326,873.194984,96%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.5,1968043.206,886.2129275,96%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Train,Pedestrian Total,NA,Pandas,0.1,806447.8968,619.8800714,96%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Test,Pedestrian Total,NA,KNN,0.3,510894.6939,509.2306448,96%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Test,Pedestrian Total,NA,KNN,0.3,569545.4632,510.2905775,95%,KNN,"{'p': 1, 'n_neighbors': 5, 'leaf_size': 50}",Not Removed
+Train,Pedestrian Total,Standard,Pandas,0.3,986008.8317,687.6470437,95%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 50}",Removed
+Train,Pedestrian Total,Standard,KNN,0.5,1069705.663,741.548601,95%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 20}",Removed
+Train,Pedestrian Total,Standard,KNN,0.1,1750963.658,938.1894842,95%,Ridge,"{'normalize': False, 'alpha': 0.001}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.1,1750964.067,938.159845,95%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.3,1993883.955,1009.70261,95%,Ridge,"{'normalize': False, 'alpha': 0.1}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.3,1993884.664,1009.661993,95%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Train,Pedestrian Total,Standard,Pandas,0.5,1090270.454,746.0592387,95%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Test,Pedestrian Total,NA,KNN,0.5,593002.3859,557.0506806,95%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.3,2059129.301,1036.280082,95%,Ridge,"{'normalize': False, 'alpha': 0.001}",Not Removed
+Train,Pedestrian Total,NA,Pandas,0.3,2059138.264,1036.248285,95%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.1,978145.1462,681.7532526,95%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Train,Pedestrian Total,NA,KNN,0.5,2411691.367,1135.309154,95%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.5,2411873.649,1135.066276,95%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Train,Pedestrian Total,NA,Pandas,0.5,2414855.528,1136.276336,95%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Train,Pedestrian Total,Standard,Pandas,0.5,2415032.121,1136.024612,95%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Train,Pedestrian Total,Standard,Pandas,0.1,1880300.57,992.329256,95%,Ridge,"{'normalize': False, 'alpha': 0.01}",Not Removed
+Train,Pedestrian Total,NA,Pandas,0.1,1880300.886,992.3208311,95%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Train,Pedestrian Total,Standard,KNN,0.3,1086422.44,739.7380301,95%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 20}",Removed
+Test,Pedestrian Total,NA,KNN,0.5,677043.3686,596.5327633,95%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 50}",Not Removed
+Test,Pedestrian Total,Standard,KNN,0.3,633807.2349,602.3162968,95%,RandomForest,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.1,1035351.233,710.7116949,95%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 50}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.3,2214846.067,885.3719625,95%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Train,Pedestrian Total,NA,KNN,0.1,1078902.265,752.8774091,94%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Train,Pedestrian Total,Standard,KNN,0.1,1078920.476,752.876078,94%,Ridge,"{'normalize': False, 'alpha': 5}",Removed
+Train,Pedestrian Total,NA,KNN,0.3,1179837.34,788.6531727,94%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Train,Pedestrian Total,Standard,KNN,0.3,1179985.385,788.5657785,94%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Test,Pedestrian Total,NA,KNN,0.3,674963.2641,617.6771939,94%,RandomForest,"{'n_estimators': 50, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.1,2071031.775,888.554253,94%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Test,Pedestrian Total,Standard,KNN,0.1,731362.2749,645.2966318,94%,Ridge,"{'normalize': False, 'alpha': 5}",Removed
+Test,Pedestrian Total,NA,KNN,0.1,731894.7274,645.4647406,94%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Train,Pedestrian Total,NA,KNN,0.5,1357658.659,860.5553746,94%,Ridge,"{'normalize': True, 'alpha': 0.001}",Removed
+Train,Pedestrian Total,Standard,KNN,0.5,1357947.853,860.7204799,94%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Train,Pedestrian Total,NA,Pandas,0.5,1405724.452,878.8456839,94%,Ridge,"{'normalize': True, 'alpha': 0.001}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.5,1406040.808,879.0830899,94%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Train,Pedestrian Total,NA,Pandas,0.3,1360070.58,861.6958214,93%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.3,1360521.041,862.276156,93%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Test,Pedestrian Total,Standard,KNN,0.3,788698.6558,687.1843626,93%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Test,Pedestrian Total,NA,KNN,0.3,792699.6651,688.9389626,93%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Train,Pedestrian Total,NA,Pandas,0.1,1367976.494,876.319209,93%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Train,Pedestrian Total,Standard,Pandas,0.1,1368099.062,876.4598792,93%,Ridge,"{'normalize': False, 'alpha': 5}",Removed
+Test,Pedestrian Total,Standard,KNN,0.3,875264.6615,709.1936278,93%,RandomForest,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Test,Pedestrian Total,NA,KNN,0.3,901878.9362,720.1496682,93%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Test,Pedestrian Total,NA,KNN,0.1,970477.093,756.5906616,92%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Test,Pedestrian Total,Standard,KNN,0.1,970563.6306,756.6462861,92%,Ridge,"{'normalize': False, 'alpha': 0.001}",Not Removed
+Test,Pedestrian Total,NA,KNN,0.3,967973.7637,754.0261366,92%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Test,Pedestrian Total,Standard,KNN,0.3,968247.8037,754.1721214,92%,Ridge,"{'normalize': False, 'alpha': 0.1}",Not Removed
+Test,Pedestrian Total,Standard,KNN,0.5,1025667.099,774.9828621,92%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Test,Pedestrian Total,NA,KNN,0.5,1027399.669,775.5985715,92%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Test,Pedestrian Total,Standard,KNN,0.5,948769.1751,765.2799944,92%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Test,Pedestrian Total,NA,KNN,0.5,950522.3236,765.7071955,92%,Ridge,"{'normalize': True, 'alpha': 0.001}",Removed
+Test,Pedestrian Total,NA,Pandas,0.1,1133621.68,745.574321,91%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.5,1687213.042,937.0917278,90%,Ridge,NA,Removed
+Test,Pedestrian Total,Standard,Pandas,0.1,1196817.978,757.5389179,90%,RandomForest,"{'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.3,1829271.037,981.8995669,89%,Ridge,NA,Removed
+Test,Pedestrian Total,Standard,Pandas,0.3,1235032.076,843.7540592,89%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Test,Pedestrian Total,NA,Pandas,0.1,1297565.721,802.2950997,89%,RandomForest,"{'n_estimators': 10, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Test,Pedestrian Total,Standard,Pandas,0.1,1306416.636,808.4196502,89%,RandomForest,"{'n_estimators': 50, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': True}",Not Removed
+Test,Pedestrian Total,NA,Pandas,0.3,1252666.121,849.6654046,89%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.1,1905436.866,1003.915574,89%,Ridge,NA,Removed
+Test,Pedestrian Total,NA,Pandas,0.1,1359985.42,819.2376882,89%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 30}",Not Removed
+Test,Pedestrian Total,NA,Pandas,0.3,1361401.454,895.303757,89%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Not Removed
+Test,Pedestrian Total,NA,Pandas,0.1,1382494.315,830.0717076,89%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Test,Pedestrian Total,Standard,KNN,0.1,1395086.637,898.6804033,89%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Test,Pedestrian Total,Standard,Pandas,0.3,1412377.979,914.1304839,88%,RandomForest,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': True}",Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.3,2045021.071,1004.884309,88%,RandomForest,NA,Removed
+Test,Pedestrian Total,NA,Pandas,0.3,1435077.554,847.3380645,88%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 40}",Not Removed
+Test,Pedestrian Total,NA,Pandas,0.5,1532582.009,921.4334995,88%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Test,Pedestrian Total,Standard,Pandas,0.5,1534848.89,924.3527642,88%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Test,Pedestrian Total,NA,Pandas,0.3,1485575.375,891.4925235,88%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Test,Pedestrian Total,Standard,Pandas,0.3,1493334.972,893.1069685,88%,Ridge,"{'normalize': False, 'alpha': 0.001}",Not Removed
+Test,Pedestrian Total,NA,Pandas,0.1,1503954.869,890.3793959,88%,Ridge,"{'normalize': False, 'alpha': 10}",Not Removed
+Test,Pedestrian Total,Standard,Pandas,0.1,1504126.848,890.387259,88%,Ridge,"{'normalize': False, 'alpha': 0.01}",Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.1,2144026.073,1101.184871,88%,Ridge,NA,Removed
+Test,Pedestrian Total,NA,Pandas,0.5,1464953.519,883.2307915,88%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 20}",Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.1,2178079.934,1045.081583,87%,RandomForest,NA,Removed
+Test,Pedestrian Total,NA,Pandas,0.3,1476623.341,868.1989078,87%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 40}",Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.5,2231552.639,1097.675906,87%,Ridge,NA,Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.5,2249798.678,1085.709731,87%,RandomForest,NA,Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.3,2269751.209,1111.467067,87%,Ridge,NA,Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.1,2338730.401,1187.694889,87%,RandomForest,NA,Removed
+Test,Pedestrian Total,NA,Pandas,0.1,1696081.138,939.572223,86%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.3,2402968.64,1208.192871,86%,RandomForest,NA,Removed
+Test,Pedestrian Total,Standard,Pandas,0.1,1697529.605,939.8792475,86%,Ridge,"{'normalize': False, 'alpha': 5}",Removed
+Test,Pedestrian Total,NA,KNN,0.5,1669943.392,1027.410823,86%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Test,Pedestrian Total,Standard,Pandas,0.3,1690536.98,1013.918397,86%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Test,Pedestrian Total,NA,Pandas,0.3,1692470.638,1014.64382,86%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Test,Pedestrian Total,Standard,KNN,0.5,1731968.898,1043.954926,85%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.1,2699470.493,1147.652388,85%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.3,2854364.425,1196.462238,84%,RandomForest,NA,Not Removed
+Test,Pedestrian Total,Standard,KNN,0.1,2032000.984,1084.229402,83%,KNN,"{'p': 2, 'n_neighbors': 5, 'leaf_size': 20}",Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.5,3247161.467,1455.752633,81%,RandomForest,NA,Removed
+Test,Pedestrian Total,NA,Pandas,0.5,2500271.656,1229.243958,80%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Test,Pedestrian Total,NA,Pandas,0.5,2353774.75,1288.322769,80%,Ridge,"{'normalize': True, 'alpha': 0.001}",Removed
+Test,Pedestrian Total,Standard,Pandas,0.5,2354553.771,1288.843717,80%,Ridge,"{'normalize': False, 'alpha': 10}",Removed
+Test,Pedestrian Total,NA,KNN,0.5,2635471.452,1236.588809,79%,RandomForest,"{'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': True}",Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.5,3820601.597,1421.198793,78%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.3,3981811.099,1542.990884,77%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.1,3984857.756,1505.457772,77%,RandomForest,NA,Not Removed
+Test,Pedestrian Total,Standard,KNN,0.5,2899996.927,1273.462725,77%,RandomForest,"{'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.3,3982963.22,1424.917008,77%,KNN,NA,Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.1,4209457.086,1396.558814,76%,KNN,NA,Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.5,4448649.024,1615.535736,75%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.1,4527967.822,1682.420412,74%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.1,4516705.723,1516.199271,74%,KNN,NA,Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.1,4678782.538,1528.993288,73%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.3,4681272.916,1717.82901,73%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.5,4811143.933,1741.690773,73%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.1,4811170.62,1718.296653,73%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.3,4739346.672,1600.642665,73%,KNN,NA,Removed
+Test,Pedestrian Total,Standard,Pandas,0.1,3424561.52,1315.877397,72%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 50}",Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.1,5042552.004,1622.9775,71%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.3,5311017.035,1667.03484,70%,KNN,NA,Not Removed
+Test,Pedestrian Total,NA,Pandas,0.5,3656329.073,1584.244961,69%,RandomForest,"{'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.3,5524060.448,1764.676244,69%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.5,5678088.816,1949.387897,68%,RandomForest,NA,Not Removed
+Test,Pedestrian Total,Standard,Pandas,0.1,3978758.397,1444.803134,67%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.5,5664088.068,1767.71096,67%,KNN,NA,Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.3,5757957.892,1851.900235,67%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.5,6029950.489,1918.832834,65%,KNN,NA,Removed
+Test,Pedestrian Total,Standard,KNN,0.3,4086273.465,1599.261878,65%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 20}",Removed
+Test,Pedestrian Total,Standard,Pandas,0.5,4131257.7,1655.424385,65%,RandomForest,"{'n_estimators': 50, 'max_features': 'sqrt', 'max_depth': 20, 'bootstrap': False}",Removed
+Test,Pedestrian Total,Standard,KNN,0.3,4899766.732,1730.216527,60%,KNN,"{'p': 2, 'n_neighbors': 5, 'leaf_size': 20}",Not Removed
+Validation Data,Pedestrian Total,Standard,KNN,0.5,7313267.794,2015.568961,58%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,Standard,Pandas,0.5,7914416.732,2234.28371,55%,KNN,NA,Not Removed
+Test,Pedestrian Total,Standard,Pandas,0.3,5440106.984,1852.495214,53%,KNN,"{'p': 1, 'n_neighbors': 7, 'leaf_size': 50}",Removed
+Test,Pedestrian Total,Standard,KNN,0.5,7534690.015,2076.758128,41%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Test,Pedestrian Total,Standard,Pandas,0.3,7596761.568,2252.041147,37%,KNN,"{'p': 1, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Test,Pedestrian Total,Standard,KNN,0.5,7508380.699,2092.254928,36%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 20}",Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.1,15889851.95,3298.05988,10%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,NA,KNN,0.1,16733306.3,3319.64686,5%,Ridge,NA,Not Removed
+Test,Pedestrian Total,NA,Pandas,0.5,12230372.4,3006.376979,4%,RandomForest,"{'n_estimators': 2000, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': True}",Not Removed
+Validation Data,Pedestrian Total,NA,KNN,0.3,17027906.9,3306.191399,3%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.3,17075367.48,3347.492795,3%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.1,17878209.05,3270.852698,-3%,Ridge,NA,Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.5,17949650.72,3237.19447,-4%,Ridge,NA,Removed
+Test,Pedestrian Total,Standard,Pandas,0.5,13602443.54,3136.662907,-6%,RandomForest,"{'n_estimators': 50, 'max_features': 'sqrt', 'max_depth': 100, 'bootstrap': False}",Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.3,20881819.66,3423.795278,-20%,Ridge,NA,Removed
+Test,Pedestrian Total,Standard,Pandas,0.5,14347773.71,3147.709579,-22%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 40}",Removed
+Test,Pedestrian Total,Standard,Pandas,0.5,16764871.13,3461.93925,-31%,KNN,"{'p': 2, 'n_neighbors': 10, 'leaf_size': 20}",Not Removed
+Validation Data,Pedestrian Total,NA,KNN,0.5,22969591.84,3518.563887,-32%,Ridge,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.5,25230054.98,4369.527539,-43%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.5,25494189.86,4392.426609,-45%,Ridge,NA,Not Removed
+Validation Data,Pedestrian Total,NA,KNN,0.1,25846528.44,3746.846148,-49%,Ridge,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.3,27543689.5,3864.545359,-59%,Ridge,NA,Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.5,36441024.3,4618.608303,-107%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.5,37644811.8,4707.671073,-117%,RandomForest,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.5,37717907.2,4715.049025,-118%,RandomForest,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.5,38683057.99,4800.355428,-120%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.3,39805449.67,4881.875174,-126%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.3,40133892.15,4906.962218,-131%,RandomForest,NA,Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.1,40234588.93,4911.745447,-132%,RandomForest,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.3,43680393.27,5199.565323,-148%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,NA,KNN,0.3,43872155.39,5225.396968,-153%,RandomForest,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.1,44346167.01,5247.333503,-156%,RandomForest,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.1,45573329.59,5342.958335,-159%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.1,45870789.41,5351.410594,-161%,RandomForest,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.5,52227970.23,5905.787964,-201%,KNN,NA,Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.1,52227970.23,5905.787964,-201%,KNN,NA,Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.3,52306574.66,5913.748124,-202%,KNN,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.5,52536629.28,5933.04383,-203%,KNN,NA,Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.5,53831129.78,6017.674189,-206%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,NA,KNN,0.5,53831165.81,6017.675616,-206%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.3,53913022.56,6025.762378,-206%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,NA,Pandas,0.1,53913022.56,6025.762378,-206%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,NA,KNN,0.3,53210031.33,5989.257176,-207%,KNN,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.1,53276220.71,5994.35748,-207%,KNN,NA,Removed
+Validation Data,Pedestrian Total,NA,KNN,0.1,54824236.57,6100.669733,-211%,KNN,NA,Not Removed
+Validation Data,Pedestrian Total,NA,KNN,0.3,54893938.45,6106.233676,-212%,KNN,NA,Not Removed
