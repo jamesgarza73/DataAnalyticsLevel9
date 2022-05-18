@@ -194,7 +194,7 @@ class Models():
                     if j != 'PolynomialFeatures':
                         pipe = make_pipeline(ColumnTransformer([('cat', 
                                     OneHotEncoder(handle_unknown='ignore'), cat_cols),
-                                    ('num', num_pipe, num_cols)]), i, k())
+                                    ('num', num_pipe, num_cols)]), i, k)
 
                         grid = GridSearchCV(pipe, param_grid=parameters[j]['gridParams'], cv=5)
                         grid.fit(X, y)
@@ -213,25 +213,44 @@ class Models():
                                                   'Feature Importance': feature_importance}, 
                                                  ignore_index=True)
                     elif j == 'PolynomialFeatures':
-                        pipe = make_pipeline(ColumnTransformer([('cat', 
-                                OneHotEncoder(handle_unknown='ignore'), cat_cols),
-                                ('num', num_pipe, num_cols)]), i, k(), BayesianRidge())
-                        # Add parameters unique to 
-                        grid = GridSearchCV(pipe, 
-                            param_grid=parameters[j]['gridParams']['Bayesian'], cv=5)
-                        grid.fit(X, y)
-                        if h == 'PCA':
-                            dimensionReduction = grid.best_estimator_.named_steps['pca'].components_
-                        if h == 'KMeans':
-                            dimensionReduction = Counter(grid.best_estimator_.named_steps['kmeans'].labels_)
-                        results = results.append({'Model Name':  'Polynomial Features Bayesian','Scaler': l,
-                                        'Outliers' : outliers, 'Dimension Reducer': h, 'Dimension Reduction': dimensionReduction,
-                                       'Best Parameters': str(grid.best_params_),
-                                       'R2 Score': grid.score(X,y), 'Mean Square Error':
-                                       mean_squared_error(y, grid.predict(X)), 
-                            'Mean Absolute Error': mean_absolute_error(y, grid.predict(X)),
-                                                  'Feature Importance': feature_importance}, 
-                                                 ignore_index=True)
+                        if 'Ridge' in parameters[j]['gridParams']:
+                            pipe = make_pipeline(ColumnTransformer([('cat', 
+                                    OneHotEncoder(handle_unknown='ignore'), cat_cols),
+                                    ('num', num_pipe, num_cols)]), i, k(), Ridge())
+                            # Add parameters unique to 
+                            grid = GridSearchCV(pipe, 
+                                param_grid=parameters[j]['gridParams']['Ridge'], cv=5)
+                            grid.fit(X, y)
+                            if h == 'PCA':
+                                dimensionReduction = grid.best_estimator_.named_steps['pca'].components_
+                            if h == 'KMeans':
+                                dimensionReduction = Counter(grid.best_estimator_.named_steps['kmeans'].labels_)
+                            results = results.append({'Model Name':  'Polynomial Features Ridge','Scaler': l,
+                                            'Outliers' : outliers, 'Dimension Reducer': h, 'Dimension Reduction': dimensionReduction,
+                                           'Best Parameters': str(grid.best_params_),
+                                           'R2 Score': grid.score(X,y), 'Mean Square Error':
+                                           mean_squared_error(y, grid.predict(X)), 
+                                'Mean Absolute Error': mean_absolute_error(y, grid.predict(X)),
+                                                      'Feature Importance': feature_importance}, 
+                                                     ignore_index=True)
+                        elif 'Lasso' in parameters[j]['gridParams']:
+                            pipe = make_pipeline(ColumnTransformer([('cat', 
+                                    OneHotEncoder(handle_unknown='ignore'), cat_cols),
+                                    ('num', num_pipe, num_cols)]), i, k(), Lasso())
+                            grid = GridSearchCV(pipe, param_grid=parameters[j]['gridParams']['Lasso'], cv=5)
+                            grid.fit(X, y)
+                            if h == 'PCA':
+                                dimensionReduction = grid.best_estimator_.named_steps['pca'].components_
+                            if h == 'KMeans':
+                                dimensionReduction = Counter(grid.best_estimator_.named_steps['kmeans'].labels_)
+                            results = results.append({'Model Name':  'Polynomial Features Lasso','Scaler': l,
+                                            'Outliers' : outliers, 'Dimension Reducer': h, 'Dimension Reduction': dimensionReduction,
+                                           'Best Parameters': str(grid.best_params_),
+                                           'R2 Score': grid.score(X,y), 'Mean Square Error':
+                                           mean_squared_error(y, grid.predict(X)), 
+                                'Mean Absolute Error': mean_absolute_error(y, grid.predict(X)),
+                                                      'Feature Importance': feature_importance}, 
+                                                     ignore_index=True)
                     print('Model {}'.format(j))
                     print('Result for this model is {:2f} % '.format(grid.score(X,y)))
                     print('Completed {}% \n'.format(round((count / total)*100,2)))
