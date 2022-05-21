@@ -19,7 +19,6 @@ from collections import Counter
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
-
 class Stats():  
     def shapiroTest(data, col):
         stat = stats.shapiro(data)
@@ -57,27 +56,47 @@ class Stats():
         if all(results):
             # perform T-Test
             pValue = stats.ttest_ind(data[cols[0]], data[cols[1]])
+            if pValue[1] >=0.05:
+                print('Accept Null Hypothesis P-Value {:.4f}'.format(pValue[1]))
+            else:
+                print('Reject Null Hypothesis P-Value {:.4f}'.format(pValue[1])) 
             return pValue
         else:
             #perform the Mann-Whitney U test
             MW = stats.mannwhitneyu(data[cols[0]], data[cols[1]], 
                alternative='two-sided')
-            return MW
+        if MW[1] >= 0.05:
+            print('Accept Null Hypothesis P-Value {:.4f}'.format(MW[1]))
+        else:
+            print('Reject Null Hypothesis P-Value {:.4f}'.format(MW[1]))     
+        return MW
     
     def groupCompare(data, results, input1, input2, input3):
         cols = data.columns
         if all(results):
             # ANOVA
             if not input3:
-                oneWay = Stats.oneWayAnova(data, input1, input2) 
+                oneWay = Stats.oneWayAnova(data, input1, input2)
+                if oneWay[1] >=0.05:
+                    print('Accept Null Hypothesis P-Value {:.4f}'.format(oneWay[1]))
+                else:
+                    print('Reject Null Hypothesis P-Value {:.4f}'.format(oneWay[1])) 
                 return oneWay
             else:
                 twoWay = Stats.twoWayAnova(data, input1, input2, input3)
+                if twoWay[1] >=0.05:
+                    print('Accept Null Hypothesis P-Value {:.4f}'.format(twoWay[1]))
+                else:
+                    print('Reject Null Hypothesis P-Value {:.4f}'.format(twoWay[1])) 
                 return twoWay
         else:
             # Krustal Wallis
             args = Stats.getArgs(data)
             kurkWall = stats.kruskal(*args)
+            if kurkWall[1] >=0.05:
+                print('Accept Null Hypothesis P-Value {:.4f}'.format(kurkWall[1]))
+            else:
+                print('Reject Null Hypothesis P-Value {:.4f}'.format(kurkWall[1])) 
             return kurkWall
   
 
@@ -198,8 +217,8 @@ class Models():
 
                         grid = GridSearchCV(pipe, param_grid=parameters[j]['gridParams'], cv=5)
                         grid.fit(X, y)
-                        if j == 'RandomForestRegressor':
-                            feature_importance = grid.best_estimator_.named_steps['randomforestregressor'].feature_importances_.astype('object')
+                        if j == 'XGBRegressor':
+                            feature_importance = grid.best_estimator_.named_steps['xgbregressor'].feature_importances_.astype('object')
                         if h == 'PCA':
                             dimensionReduction = grid.best_estimator_.named_steps['pca'].components_
                         if h == 'KMeans':
@@ -218,7 +237,7 @@ class Models():
                                 ('num', num_pipe, num_cols)]), i, k(), BayesianRidge())
                         # Add parameters unique to 
                         grid = GridSearchCV(pipe, 
-                            param_grid=parameters[j]['gridParams']['Bayesian'], cv=5)
+                            param_grid=parameters[j]['gridParams'], cv=5)
                         grid.fit(X, y)
                         if h == 'PCA':
                             dimensionReduction = grid.best_estimator_.named_steps['pca'].components_
